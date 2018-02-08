@@ -1,0 +1,119 @@
+/* global body padding */
+// body {
+//   padding-top: 0px;
+//   padding-bottom: 20px;
+// }
+
+/* global spacing overrides */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.navbar-fixed-top,
+.navbar-static-top {
+  border-bottom: 0;
+}
+.nav > li > a {
+  text-transform: uppercase;
+}
+
+/* TEMP */
+h3.header {
+  line-height: 1.5em;
+}
+
+.bg-gray-darker {
+  background-color: #111; /* $gray-darker */
+  color: #fff;
+}
+.bg-gray-dark {
+  background-color: #222; /* $gray-dark */
+  color: #fff;
+}
+.bg-gray {
+  background-color: #555; /* $gray */
+  color: #fff;
+}
+.bg-gray-light {
+  background-color: #aaa; /* $gray-light */
+}
+.bg-gray-lighter {
+  background-color: #f5f5f5; /* $gray-lighter */
+}
+
+.link {
+  cursor: pointer;
+}
+.link-colorless {
+  color: inherit;
+}
+.link-decorless:hover {
+  text-decoration: none;
+}
+
+.statcard-default {
+    background-color: #f5f5f5; /* $gray-lighter */
+}
+.statcard-default {
+    border-radius: 3px; /* replace with scss */
+}
+.statcard-analytics {
+    cursor: pointer;
+}
+/* TEMP */
+.statcard-primary small,
+.statcard-success small,
+.statcard-info small,
+.statcard-warning small,
+.statcard-danger small {
+  color: rgba(255, 255, 255, 0.65);
+}
+.statcard-primary .text-muted,
+.statcard-success .text-muted,
+.statcard-info .text-muted,
+.statcard-warning .text-muted,
+.statcard-danger .text-muted {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.badge {
+  font-weight: 400;
+}
+.table-borderless-top tr:first-child th,
+.table-borderless-top tr:first-child td {
+  border-top: none;
+}
+.table-borderless > tbody > tr > th,
+.table-borderless > tbody > tr > td,
+.table-borderless > thead > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > tfoot > tr > td {
+  border-top: none;
+}
+.table thead .tr-borderless td,
+.table thead .tr-borderless th,
+.table tbody .tr-borderless td,
+.table tbody .tr-borderless th {
+  border-top: none !important;
+}
+.table .tr-middle > th,
+.table .tr-middle > td {
+  vertical-align: middle;
+}
+
+table thead .icon-sort {
+  display: none;
+}
+table thead .active .icon-sort {
+  display: initial;
+}
+
+
+.alert-success {
+  color: black;
+}

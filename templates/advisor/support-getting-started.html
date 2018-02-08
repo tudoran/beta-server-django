@@ -1,0 +1,28 @@
+{% extends "layouts_new/base.html" %}
+{% load i18n %}
+{% load filters %}
+
+
+{% block main_content %}
+  <div class="container">
+    <div class="row m-t">
+      <div class="col-sm-8">
+          <!--h3 class="header">Support</h3 -->
+      </div>
+    </div>
+
+    <div>
+      {% include "advisor/partials/menu-support.html" %}
+    </div>
+
+    <div class="m-t">
+      <p>
+        Review our getting started guide that contains various resources to help you 
+        take advantage of all of the great features available to you and your clients.
+      </p>
+      <p>
+        <a class="btn btn-primary">View the guide</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}

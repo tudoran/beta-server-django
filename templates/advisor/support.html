@@ -1,0 +1,71 @@
+{% extends "layouts_new/base.html" %}
+{% load i18n %}
+{% load filters %}
+
+
+{% block main_content %}
+  <div class="container">
+    <div class="row m-t">
+      <div class="col-sm-8">
+          <!--h3 class="header">Support</h3 -->
+      </div>
+    </div>
+
+    <div>
+      {% include "advisor/partials/menu-support.html" %}
+    </div>
+
+    <div class="row m-t">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Support for you</div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td width="1%"><span class="icon icon-phone"></span></td>
+                <td>{{ SUPPORT_PHONE|phone }}</td>
+              </tr>
+              <tr>
+                <td width="1%"><span class="icon icon-mail"></span></td>
+                <td><a href="mailto:{{ SUPPORT_EMAIL }}">{{ SUPPORT_EMAIL }}</a></td>
+              </tr>
+              <tr>
+                <td width="1%"><span class="icon icon-stopwatch"></span></td>
+                <td>
+                  Monday - Friday: 9AM - 8PM AEST
+                  <br>
+                  Saturday - Sunday: 11AM - 6PM AEST
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Support for your clients</div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td width="1%"><span class="icon icon-phone"></span></td>
+                <td>{{ SUPPORT_PHONE|phone }}</td>
+              </tr>
+              <tr>
+                <td width="1%"><span class="icon icon-mail"></span></td>
+                <td><a href="mailto:{{ SUPPORT_EMAIL }}">{{ SUPPORT_EMAIL }}</a></td>
+              </tr>
+              <tr>
+                <td width="1%"><span class="icon icon-stopwatch"></span></td>
+                <td>
+                  Monday - Friday: 9AM - 8PM AEST
+                  <br>
+                  Saturday - Sunday: 11AM - 6PM AEST
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
